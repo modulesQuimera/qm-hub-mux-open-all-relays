@@ -1,7 +1,7 @@
 {
   "name": "qm-hub-mux-open-all-relays",
-  "version": "1.0.2",
-  "description": "Open All Relays",
+  "version": "1.0.0",
+  "description": "Component Multiplexer | Node-RED ",
   "main": "openallrelay.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/modulesQuimera/qm-hub-mux-open-all-relays.git"
   },
-  "keywords": [
-    "quimera",
-    "hub",
-    "JIG"
-  ],
+  "keywords": ["quimera","Hub","JIG"],
   "author": "HUB-LSE",
   "license": "ISC",
   "bugs": {
@@ -22,8 +18,8 @@
   },
   "homepage": "https://github.com/modulesQuimera/qm-hub-mux-open-all-relays#readme",
   "node-red": {
-    "nodes": {
-      "open_all_relays": "openallrelays.js"
-    }
-  }
+		"nodes": {
+			"open_all_relays": "openallrelay.js"
+		}
+	}
 }
