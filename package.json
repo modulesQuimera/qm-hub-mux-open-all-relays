@@ -1,6 +1,6 @@
 {
   "name": "qm-hub-mux-open-all-relays",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Component Multiplexer | Node-RED ",
   "main": "openallrelay.js",
   "scripts": {
