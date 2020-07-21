@@ -1,14 +1,15 @@
 <script type="text/javascript">
     RED.nodes.registerType('open_all_relays',{
         category: 'Mux Module',
-        color: '#00FFFF',
+        color: '#FFFFFF',
         defaults: {
-            name:{ value: "" }
+            name:{ value: "" },
+            slot:{value:"",required:true}
         },
         inputs:1,
         outputs:1,
-        icon: "./icons/Open_All_Releys.svg",
-        label: "Open All Relays",
+        icon: "Mux.svg",
+        label: function() { return this.name? "Open All Relays - " + this.name: "Open All Relays" },
         paletteLabel: "Open All Relays"
      });
 </script>
@@ -63,8 +64,12 @@
 
     <div class="form-row columm">
        <strong class="descript">
-        This Component is used to open all relays.
+        Opens the contact of all relays.
         </strong>
+    </div>
+    <div class="form-row columm">
+        <label  for="node-input-slot"><i class="fa fa-sliders"></i> Slot</label>
+        <input min="0" type="number" id="node-input-slot" style="width:20%;">
     </div>
 
     <div class="hr-div-muxOpen">
@@ -85,7 +90,7 @@
 </script>
 
 <script type="text/html" data-help-name="open_all_relays">
-    <p>Working on it...</p>
+    <p>Opens the contact of all relays.</p>
 </script>
 
 
